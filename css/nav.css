@@ -4,6 +4,63 @@
     box-sizing: border-box;
 }
 
+:root {
+    --orange-color: #db6b1a;
+    --hell-color: #f7f1e1;
+    --dark-color: #2B2B2A;
+    --blue-color: #0028ff;
+}
+
 html {
     font-family: "Roboto", sans-serif;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 4vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    width: 35%;
+    height: 100%;
+    list-style: none;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul a {
+    font-size: 1.3em;
+    color: #F7F1E1;
+    text-transform: uppercase;
+    position: relative;
+}
+
+nav ul a::after {
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: #F7F1E1;
+    width: 0%;
+    height: 1px;
+    left: 50%;
+    transform: translateX(-50%);   
+    transition: all 0.5s; 
+}
+
+nav ul a:hover::after {
+    width: 100%;  
 }

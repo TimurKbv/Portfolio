@@ -31,12 +31,12 @@ header {
 }
 
 .header-container > div {
-    width: 50%;
+    width: 100%;
     height: 100%;
 } 
 
 /* HEADER FIRST BLOCK */
-.header-box:first-child {
+.header-box-1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,17 +48,17 @@ header {
     background-position: center;
 }
 
-.header-box:first-child h1 {
+.header-box-1 h1 {
     font-size: 5.5em;
     text-align: center;
     color: var(--hell-color);
 }
 
-.header-box:first-child span {
+.header-box-1 span {
     color: var(--orange-color);
 }
 
-.header-box:first-child h2 {
+.header-box-1 h2 {
     margin-top: 30px;
     color: var(--hell-color);
     text-align: center;
@@ -66,27 +66,100 @@ header {
     text-decoration: underline;
 }
 
-.header-box ul {
+.header-box-1 ul {
     margin-top: 35px;
     list-style: none;
     display: flex;
 }
 
-.header-box ul a {
+.header-box-1 ul a {
     color: var(--hell-color);
     font-size: 3em;
     margin: 20px;
 }
 
-.header-box ul li:first-child a::after {
+.header-box-1 ul li:first-child a::after {
     font-family: "FontAwesome";
     content: '\e055';
 }
 
-.header-box ul li:last-child a:after {
+.header-box-1 ul li:nth-child(2) a:after {
     font-family: "FontAwesome";
     content: '\f0e1';
 }
 
+.header-box-1 ul li:last-child a:after {
+    font-family: "FontAwesome";
+    content: '\f09b';
+}
+
 /* HEADER SECOND BLOCK */
+
+.header-box-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+.header-box-2 a {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    
+}
+
+.header-box-2 div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.8s;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header-box-2 div:hover {
+    transform: scale(1.1);
+}
+
+.header-menu-1 {
+    background-image: url(../img/nav-pic-4.jpg);
+}
+
+.header-menu-2 {
+    background-image: url(../img/nav-pic-1.jpg);
+}
+
+.header-menu-3 {
+    background-image: url(../img/nav-pic-3.jpg);
+}
+
+.header-menu-4 {
+    background-image: url(../img/nav-pic-6.jpg);  
+}
+
+.header-box-2 h3, .header-box-2 p {
+    margin-left: 15%;
+    color: var(--hell-color);
+}
+
+.header-box-2 h3 {
+    font-size: 3em;
+}
+
+.header-box-2 p {
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+.header-box-2 span {
+    color: var(--orange-color);
+}
+
+
+/* --------------------MAIN------------------ */
 

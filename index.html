@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Timur Kokumbaev">
-    <meta name="description" content="Portfolio Project">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Timur Kokumbaev" />
+    <meta name="description" content="Portfolio Project" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/nav.css">
-    <link rel="stylesheet" href="./css/style.css">
-    
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/footer.css">
 
     <!-- Font Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,107 +27,208 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="./portfolio.css">Portfolio</a></li>
-        <li><a href="/skills.css">Skills</a></li>
-        <li><a href="./contact.css">Contact</a></li>
-      </ul>
-    </nav>
-    <!-- ------------HEADER CONTAINER ----------------->
-    <div class="header-container">
-      <!-- HEADER FIRST BLOCK -->
-      <div class="header-box-1">
-        <div>
-          <h1><span>Hello</span> <br> I'm Timur</h1>
-          <h2><strong>Web Developer</strong></h2>
-        </div>
+  </head>
+  <body>
+    <!-- ------------HEADER------------- -->
+    <header>
+      <!-- ----------NAV--------- -->
+      <nav>
         <ul>
-          <li><a href="https://www.instagram.com/timurbeerleen/?hl=de" target="_blank" rel="noopener noreferrer"></a></li>
-          <li><a href="https://www.linkedin.com/in/timur-kokumbaev-3391b7249/" target="_blank" rel="noopener noreferrer"></a></li>
-          <li><a href="https://github.com/TimurKbv" target="_blank" rel="noopener noreferrer"></a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="./portfolio.html">Portfolio</a></li>
+          <li><a href="./skills.html">Skills</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- ------------HEADER CONTAINER ----------------->
+      <div class="header-container">
+
+        <!-- HEADER FIRST BLOCK -->
+        <div class="header-box-1">
+          <div>
+            <h1>
+              <span>Hello</span> <br />
+              I'm Timur
+            </h1>
+            <h2><strong>Web Developer</strong></h2>
+          </div>
+          <ul>
+            <li>
+              <a
+                href="https://www.instagram.com/timurbeerleen/?hl=de"
+                target="_blank"
+                rel="noopener noreferrer"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/timur-kokumbaev-3391b7249/"
+                target="_blank"
+                rel="noopener noreferrer"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/TimurKbv"
+                target="_blank"
+                rel="noopener noreferrer"
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- HEADER SECOND BLOCK -->
+        <div class="header-box-2">
+          <a href="#">
+            <div class="header-menu-1">
+              <h3>H<span>o</span>me</h3>
+              <p>Some words about me.</p>
+            </div>
+          </a>
+
+          <a href="./portfolio.html">
+            <div class="header-menu-2">
+              <h3>Port<span>f</span>olio</h3>
+              <p>My last works.</p>
+            </div>
+          </a>
+
+          <a href="./skills.html">
+            <div class="header-menu-3">
+              <h3>S<span>k</span>ills</h3>
+              <p>Something about my skills.</p>
+            </div>
+          </a>
+
+          <a href="./contact.html">
+            <div class="header-menu-4">
+              <h3>Co<span>n</span>tact</h3>
+              <p>Send me a message.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </header>
+          <!-- --------------MAIN----------------- -->
+    <main>
+      <!-- SECTION 1 -->
+      <section class="section-1">
+        <div class="item-1">
+          <div class="content">
+            <h2>About me</h2>
+            <p>
+              I am still studying at the
+              <a
+                href="https://digitalcareerinstitute.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><span>DCI</span></a
+              >. After graduation i will be a
+              <span>full stack web developer</span>. I really enjoy writing code
+              and solving problems, so I enjoy practicing in my free time.
+            </p>
+          </div>
+        </div>
+        <div class="item-2">
+          <div class="image">
+            <a
+              href="https://digitalcareerinstitute.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="./img/dci-logo.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION 2 -->
+      <section class="section-2">
+        <div class="item-1">
+          <div class="image">
+            <img src="./img/me-in-the-mountains.jpg" alt="Pic" />
+          </div>
+        </div>
+        <div class="item-2">
+          <div class="content">
+            <p>
+              My first experience in IT started as a <span>tutor</span> at <span>DCI</span>, which gives me the opportunity to be better and learn more. I also love sports. <span>Boxing</span> taught me to be determined
+              and <span>snowboarding</span> just for fun.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Section 3 -->
+      <section class="section-3">
+        <div class="item-1">
+          <div class="content">
+            <a href="./portfolio.html">
+              <div><span>Portfolio</span></div>
+            </a>
+            <p>
+              Check my first works out
+            </p>
+            
+          </div>
+        </div>
+        <div class="item-2">
+          <div class="image">
+            <img src="./img/me-boxing.PNG" alt="Boxing Pic" />
+          </div>
+        </div>
+        <div class="image">
+          <img src="./img/me-snowboard.PNG" alt="Snowboard Pic" />
+        </div>
+      </section>
+      <!-- Section 4 -->
+      <section class="section-4">
+        <div class="item-1">
+          <p>
+            My next <span>goal</span> is to successfully complete the
+            <span>Web Developer</span> course and get the most out of it. And
+            then I would like to work where I can also learn and develop
+            professionally.
+          </p>
+        </div>
+       
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <ul>
+
+          <li>copyright</li>
+
+          <li>
+            <ul class="social-media-links">
+              <li>
+                <a
+                  href="https://www.instagram.com/timurbeerleen/?hl=de"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/timur-kokumbaev-3391b7249/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/TimurKbv"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                ></a>
+              </li>
+            </ul>
+          </li>
+
+          <li>all rights reserved</li>
+
         </ul>
       </div>
-
-      <!-- HEADER SECOND BLOCK -->
-      <div class="header-box-2">
-
-        <a href="#">
-          <div class="header-menu-1">
-            <h3>H<span>o</span>me</h3>
-            <p>Some words about me.</p>
-          </div>
-        </a>
-
-        <a href="./portfolio.html">
-          <div class="header-menu-2">
-            <h3>Port<span>f</span>olio</h3>
-            <p>My last works.</p>
-          </div>
-        </a>        
-
-        <a href="./skills.html">
-          <div class="header-menu-3">
-            <h3>S<span>k</span>ills</h3>
-            <p>Something about my skills.</p>
-          </div>
-        </a>
-
-        <a href="./contact.html">
-          <div class="header-menu-4">
-            <h3>Co<span>n</span>tact</h3>
-            <p>Send me a message.</p>
-          </div>
-        </a>
-        
-      </div>
-    </div>
-
-    
-
-  </header>
-
-  <main>
-    <section class="section-1">
-      <div class="item-1">
-        <h2>About me</h2>
-        <p></p>
-      </div>
-      <div class="item-2">
-        <div class="image"><img src="./img/me-in-the-mountains.jpg" alt="Pic"></div>
-      </div>
-    </section>
-
-    <section class="section-2">
-      <div class="item-1">
-        <div class="image"><img src="./img/me-boxing.PNG" alt="Pic"></div>
-      </div>
-      <div class="item-2">
-        <p></p>
-      </div>
-    </section>
-
-    <section class="section-3">
-      <div class="item-1">
-        <p></p>
-      </div>
-      <div class="item-2">
-        <div class="image"><img src="./img/me-snowboard.PNG" alt="Pic"></div>
-      </div>
-    </section>
-
-    <section class="section-4">
-      <div class="item-1">
-        <p></p>
-      </div>
-      <div class="item-2"></div>
-    </section>
-    <footer></footer>
-  </main>
-    
-</body>
+  </footer>
+  </body>
 </html>

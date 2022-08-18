@@ -3,31 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-color: var(--dark-color);
+}
 
 header {
     width: 100%;
     height: 100%;
-    
-    background-color: var(--dark-color);
 }
 
-/* header video {
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    z-index: -1;
-    filter: opacity(0.5);
-} */
-
 .header-container {
-    margin-top: 4vh;
+    /* margin-top: 4vh; */
     display: flex;
-    height: 96vh;
+    height: 100vh;
     width: 100%;
- 
 }
 
 .header-container > div {
@@ -163,3 +152,141 @@ header {
 
 /* --------------------MAIN------------------ */
 
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+section {
+    margin-top: 10vh;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+section > div {
+    width: 50%;
+    color: var(--hell-color);
+    
+    display: flex;
+    flex-direction: column;
+}
+
+/* ITEM - 1 */
+.content {
+    position: sticky;
+    top: 35vh;
+    width: 70%;
+    z-index: 10;
+}
+
+.content a {
+    max-width: fit-content;
+    display: inline-block;
+    
+}
+
+.content > a div {
+    margin-top: 10%;
+    width: fit-content;
+    padding: 15px 30px;
+    border: 1px solid var(--hell-color);
+    border-radius: 40px;
+    font-size: 2em;
+    transition: 0.5s;
+}
+
+.content > a div span {
+    color: var(--hell-color);
+    text-transform: uppercase;
+}
+
+.content > a:hover div {
+    background-color: var(--hell-color);
+    color: var(--dark-color);
+}
+
+.content > a:hover div span {
+    color: var(--dark-color);
+}
+
+main span {
+    color: var(--orange-color);
+}
+
+
+.content h2 {
+    font-size: 5em;
+}
+
+main p {
+    margin-top: 25px;
+    font-size: 2.8em;
+    font-style: italic;
+}
+
+/* ITEM - 2 */
+
+.image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 3px solid var(--hell-color);
+}
+
+.section-1 .image a img {
+    width: 15vw;
+    height: auto;
+    border: none;
+    transition: transform 0.5s;
+}
+
+.section-1 .image a:hover img {
+    transform: scale(1.2);
+}
+
+.item-2 .content {
+    align-self: flex-end;
+}
+
+/* Fotos drehen */
+.section-3 .item-2 img {
+    transform: rotateZ(5deg);
+}
+
+.section-3 > .image {
+    width: 50%;
+    height: auto;
+}
+
+.section-3 > .image img {
+    width: 100%;
+    height: 100%;
+ 
+    position: relative;
+    top: -10vh;
+    left: 30vh;
+    z-index: -1;
+
+    transform: rotateZ(345deg);
+}
+
+.section-4 {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+.section-4 div {
+    width: 100%;
+}

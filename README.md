@@ -25,6 +25,7 @@ nur die Schriften und breite der container
 - ein box in header-section verschwindet 
 - die boxes in der sections werden auf volle breite und column gemacht
 - in der section-3 geht der Button mit dem Text zur rechten Seite, weil es so besser aussieht
+- Footer flex-box flex-wrap gemacht und  die social-media icons nach rechts verschoben
 ```
 
 

@@ -44,3 +44,35 @@ footer {
     font-family: "FontAwesome";
     content: '\f09b';
 }
+
+
+/* -----------Media Queries-------------- */
+
+/* Larger Tablets & Laptops */
+@media screen and (max-width: 1279px) {
+    
+    .footer-container ul {
+        font-size: 1.5em;
+    }
+}
+
+/* Larger Smartphones & Tablets  */
+
+@media screen and (max-width: 768px) {
+    .footer-container ul {
+        font-size: 1.3em;
+        flex-wrap: wrap;
+    }
+    
+    .social-media-links a {
+        margin-right: 0;
+    }
+}
+
+/* Smartphones */
+
+@media screen and (max-width: 480px) {
+    .footer-container ul {
+        font-size: 1em;
+    }
+}

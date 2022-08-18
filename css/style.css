@@ -187,7 +187,7 @@ section > div {
     display: inline-block;
     
 }
-
+/* BUTTON */
 .content > a div {
     margin-top: 10%;
     width: fit-content;
@@ -204,8 +204,9 @@ section > div {
 }
 
 .content > a:hover div {
-    background-color: var(--hell-color);
+    background-color: var(--hell-color); 
     color: var(--dark-color);
+    transform: translateX(10%);
 }
 
 .content > a:hover div span {
@@ -289,4 +290,119 @@ main p {
 
 .section-4 div {
     width: 100%;
+}
+
+
+/* -----------Media Queries-------------- */
+
+/* Larger Tablets & Laptops */
+@media screen and (max-width: 1279px) {
+    /* Header */
+    nav ul {
+        width: 55%;
+    }
+
+    /* Main */
+    .content {
+        width: 90%;
+    }
+
+    .content > a div {
+        font-size: 1.5em;
+    }
+
+    .content h2 {
+        font-size: 4em;
+    }
+
+    main p {
+        font-size: 2em;
+    }
+
+    .section-3 .item-2 .image {
+        width: 85%;
+
+    }
+
+}
+
+/* Larger Smartphones & Tablets  */
+
+@media screen and (max-width: 768px) {
+    /* Header */
+    .header-box-1 {
+        display: none;
+    }
+    nav ul {
+        width: 70%;
+    }
+
+    nav ul a {
+        font-size: 1.1em;
+    }
+
+    /* MAIN */
+                /* Sections column machen */
+    section {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    section > div {
+        width: 100%;
+    }
+
+    .section-3 .item-1 .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .section-3 .item-1 .content a {
+        width: max-content;
+    }
+
+    .section-3 .item-1 {
+        align-items: flex-end;
+    }
+
+    .section-3 > .image img {
+        left: 5vh;
+    }
+
+    .content > a div {
+        font-size: 1.1em;
+    }
+    
+    .content h2 {
+        font-size: 3em;
+    }
+
+    main p {
+        font-size: 1.5em;
+    }
+
+}
+
+/* Smartphones */
+
+@media screen and (max-width: 480px) {
+    /* Header */
+    nav ul {
+        width: 80%;
+    }
+    nav ul a {
+        font-size: 1em;
+    }
+
+    /* Main */
+
+    .content h2 {
+        font-size: 2.5em;
+    }
+
+    .content > a div {
+        font-size: 1em;
+    }
+
 }

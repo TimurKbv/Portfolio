@@ -208,6 +208,7 @@ section > div {
     background-color: var(--hell-color); 
     color: var(--dark-color);
     transform: translateX(10%);
+    box-shadow: 2px 2px 5px var(--hell-color);
 }
 
 .content > a:hover div span {

@@ -1,0 +1,27 @@
+$rosa-color: #f9cdcd;
+$dark-theme: #252422;
+
+$main-container-width: 92vw;
+$second-container-gap: 1.5em;
+$nav-text-color: white;
+
+
+/* Extends */
+
+
+%flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%button {
+  border-radius: 20px;
+  padding: 8px 30px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  overflow: hidden;
+}
+

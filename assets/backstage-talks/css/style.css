@@ -1,0 +1,161 @@
+main section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+body ul {
+  list-style: none;
+}
+
+/* ---------------------HEADER------------------ */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+header h1 {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 3em;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+main {
+  /* --------------------MAIN SECTIONS------------------ */
+  width: 100%;
+  transition: all 0.5s;
+  /* ------------NAV------------------------- */
+  /* ---------------CONTACT---------------- */
+}
+main section {
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+main section .container {
+  width: 30%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section .container h2, main section .container a, main section .container span {
+  line-height: 2.5em;
+}
+main section .container > a {
+  text-transform: uppercase;
+}
+main section .container a {
+  color: #E568AC;
+  text-decoration: none;
+}
+main section .container span {
+  font-size: 1.3em;
+  font-weight: 800;
+}
+main section .image {
+  width: 80%;
+  height: 70%;
+}
+main section .image img {
+  width: 100%;
+  height: auto;
+}
+main nav {
+  position: fixed;
+  bottom: 2em;
+  right: 1em;
+}
+main nav ul {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+main nav ul a {
+  text-decoration: none;
+  color: black;
+}
+main nav ul a:hover::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  display: block;
+  background-color: black;
+}
+main .contact {
+  position: fixed;
+  top: 2em;
+  right: 1em;
+}
+main .contact a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+footer {
+  position: fixed;
+  bottom: 1em;
+  left: 1em;
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 23vh;
+  font-size: 1.5em;
+}
+footer .footer-container p {
+  line-height: 1.3em;
+}
+footer .footer-container span {
+  color: #6F696B;
+}
+footer .footer-container span a {
+  color: #6F696B;
+}
+footer a {
+  color: black;
+}
+footer a:hover {
+  text-decoration: none;
+}
+
+.issue-5 {
+  background-color: #3FC1B5;
+}
+.issue-5 section .container a {
+  color: white;
+}
+
+.issue-4 {
+  background-color: #F5651A;
+}
+
+.issue-3 {
+  background-color: #F9BE02;
+}
+
+.issue-2 {
+  background-color: #1D3FBB;
+}
+
+.issue-1 {
+  background-color: #E30512;
+}/*# sourceMappingURL=style.css.map */

@@ -597,6 +597,18 @@ footer {
 /* ====================Media Queries ======================*/
 /* --------TABLET------------- */
 @media screen and (max-width: 1280px) {
+
+  header {
+    nav {
+      .logo {
+        display: none;
+      }
+
+      .burger-menu {
+        display: none;
+      }
+    }
+  }
   main {
     .main-container {
       #work-container {
@@ -668,8 +680,36 @@ footer {
   }
 }
 
+/* TABLET 756 */
+@media screen and (max-width: 756px) {
+  header {
+    nav {
+      .menu {
+        ul {
+          a {
+            font-size: 0.8em;
+          }
+        }
+      }
+    }
+  }
+}
+
 /* -----------PFONE--------------- */
 @media screen and (max-width: 480px) {
+
+  header {
+    nav {
+      .menu {
+        ul {
+          a {
+            font-size: 0.7em;
+          }
+        }
+      }
+    }
+  }
+
   main {
     .main-container {
       #work-container {

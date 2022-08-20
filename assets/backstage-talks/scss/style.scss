@@ -30,7 +30,9 @@ header {
 }
 
 main {
-
+    #section-6 {
+        background-color: white;
+    }
     /* --------------------MAIN SECTIONS------------------ */
     width: 100%;
     transition: all 0.5s;
@@ -46,6 +48,7 @@ main {
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
             h2, a, span {
                 line-height: 2.5em;
             }
@@ -64,6 +67,7 @@ main {
         .image {
             width: 80%;
             height: 70%;
+            margin-bottom: 2em;
             img {
                 width: 100%;
                 height: auto;
@@ -113,12 +117,12 @@ footer {
     position: fixed;
     bottom: 1em;
     left: 1em;
-    width: 15vw;
+    width: 25vw;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 23vh;
-    font-size: 1.5em;
+    justify-content: space-around;
+    height: 28vh;
+    font-size: 1.3em;
     .footer-container {
         p {
             line-height: 1.3em;
@@ -164,4 +168,115 @@ footer {
 
 .issue-1 {
     background-color: $red;
+}
+
+/* -------------------Media Queries ------------------------*/
+
+/* Larger Tablets & Laptops */
+@media screen and (max-width: 1279px) {
+
+    header {
+        h1 {
+            font-size: 2.5em;
+        }
+    
+    }
+    main {
+        section {
+
+            .container {
+                height: 75%;
+                h2 {
+                    font-size: 1.3em;
+                }
+
+                span {
+                    font-size: 1.2em
+                }
+            }
+            .image {
+                height: 50%;
+            }
+        }
+
+        nav {
+            ul {
+                font-size: 1.3em;
+            }
+        }
+
+        .contact {
+            a {
+                font-size: 1.3em;
+            }
+        }
+    }
+    
+    footer {
+
+        font-size: 1.1em;
+        .footer-container {
+            p {
+                line-height: 1em;
+            }
+        }
+    }
+
+}
+
+/* Larger Smartphones & Tablets  */
+
+@media screen and (max-width: 768px) {
+    header {
+        h1 {
+            font-size: 1.5em;
+        }
+    
+    }
+    main {
+        section {
+
+            .container {
+                height: 70%;
+                h2 {
+                    font-size: 1em;
+                }
+
+                span {
+                    font-size: 1em
+                }
+            }
+            .image {
+                height: 30%;
+            }
+        }
+
+        nav {
+            ul {
+                font-size: 1.1em;
+            }
+        }
+        .contact {
+            a {
+                font-size: 1em;
+            }
+        }
+    }
+    
+    footer {
+
+        font-size: 0.8em;
+        .footer-container {
+            p {
+                line-height: 1em;
+            }
+        }
+    }
+
+}
+
+/* Smartphones */
+
+@media screen and (max-width: 480px) {
+    
 }

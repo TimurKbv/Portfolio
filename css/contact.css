@@ -291,7 +291,7 @@ form button:hover {
     }
 
     .container ul {
-        justify-content: flex-end;
+        justify-content: center;
     }
 
     .container ul a {

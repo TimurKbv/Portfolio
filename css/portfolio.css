@@ -77,51 +77,107 @@ header h2::after {
 }
 
 .header-grid-item {
-    
     width: 100%;
     height: 100%;
     overflow: hidden;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* border: 1px solid var(--hell-color); */
 }
 
-.header-grid-item:nth-child(1) {
-    background-image: url(../img/Basic-1.png);
+.header-grid-item span {
+    color: var(--orange-color);
+}
+
+.header-grid-item h3 {
+    color: var(--hell-color);
+    font-size: 4em;
+    text-align: center;
+}
+
+.header-grid-item p {
+    color: var(--hell-color);
+    text-align: center;
+    font-size: 2.5em;
+}
+
+/* BG  div */
+.bg-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    filter: saturate(100%);
+    transition: all 0.8s;
+}
+
+.header-grid-item:hover .bg-container {
+    filter: saturate(1%);
+    /* filter: blur(5px); */
+    opacity: 0.3;
+}
+
+    /* Div mit Texte */
+
+.header-grid-item div:first-child {
+    width: 100%;
+    transition: all 0.8s;
+    transform: translateY(11em);
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.header-grid-item:hover div:first-child {
+    transform: translateY(0);
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+.header-grid-item:nth-child(1) .bg-container {
+    background-image: url(../img/Basic-project-screenshot.png);
     background-size: cover;
-    background-position: center;   
+    background-position: center; 
 }
 
-.header-grid-item:nth-child(2) {
-    background-image: url(../img/Backstage-1.png);
+.header-grid-item:nth-child(2) .bg-container {
+    background-image: url(../img/backtalks-project-screenshot.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.header-grid-item:nth-child(3) {
-    background-image: url(../img/nav-pic-1.jpg);
+.header-grid-item:nth-child(3) .bg-container {
+    background-image: url(../img/hardcode-homepage-screenshot.png);
     background-size: cover;
     background-position: center;
     
 }
 
-.header-grid-item:nth-child(4) {
+.header-grid-item:nth-child(4) .bg-container {
     background-image: url(../img/nav-pic-3.jpg);
     background-size: cover;
     background-position: center;
     
 }
 
-.header-grid-item:nth-child(5) {
+.header-grid-item:nth-child(5) .bg-container {
     background-image: url(../img/nav-pic-5.jpg);
     background-size: cover;
     background-position: center;
     
 }
 
-.header-grid-item:nth-child(6) {
+.header-grid-item:nth-child(6) .bg-container {
     background-image: url(../img/nav-pic-6.jpg);
     background-size: cover;
     background-position: center;
     
 }
+
+
 
 
 /* ---------------MAIN--------------------- */
@@ -131,6 +187,9 @@ main {
     margin: 0 auto;
 }
 
+#project-6 {
+    height: 90vh;
+}
 main section {
     width: 100%;
     height: 100vh;
@@ -143,6 +202,10 @@ main section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.project-content span {
+    color: var(--orange-color);
 }
 
 main section > div {
@@ -174,6 +237,7 @@ main section > div {
 .project-iframe iframe {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 /* Button */
@@ -189,7 +253,7 @@ main section > div {
     font-size: 1.5em;
     width: fit-content;
     padding: 15px 30px;
-    border: 1px solid var(--hell-color);
+    border: 1px solid var(--orange-color);
     border-radius: 40px;
     transition: 0.5s;
 }

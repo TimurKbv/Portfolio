@@ -4,3 +4,252 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: var(--dark-color);
+}
+
+main {
+    width: 90%;
+    height: 90vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    margin-top: 7vh;   
+    font-size: 3.5em;
+    color: var(--hell-color);
+}
+
+h2 {
+    color: var(--orange-color);
+    font-size: 2.5em
+}
+
+h3 {
+    color: var(--hell-color);
+    font-size: 1.5em;
+    font-style: italic;
+
+}
+
+h4 {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 1.8em;
+    box-shadow: 5px 2px 5px 3px rgba(0, 0, 0, 0.5);
+}
+
+.grid-skills-container {
+    position: relative;
+    padding: 1em;
+    width: 85%;
+    height: 80%;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+
+}
+
+.bg-item {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/nav-pic-3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-item {
+    text-align: center;
+    color: var(--hell-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item span {
+    color: var(--orange-color);
+}
+
+.grid-skills-container .grid-item:nth-child(1) {
+    grid-area: 1 / 5 / 2 / 9;
+}
+
+
+.grid-skills-container .grid-item:nth-child(2) {
+    grid-area: 2 / 2 / 3 / 7;
+    border-bottom: 1px solid var(--hell-color);
+    border-right: 1px solid var(--hell-color);
+    /* border-radius: 100% 0%; */
+}
+
+.grid-skills-container .grid-item:nth-child(3) {
+    grid-area: 2 / 7 / 3 / 12;
+    border-bottom: 1px solid var(--hell-color);
+    /* border-right: 1px solid var(--hell-color); */
+    /* border-radius: 0% 100%; */
+}
+
+.grid-skills-container .grid-item:nth-child(4) {
+    grid-area: 3 / 2 / 4 / span 3;
+    border-left: 1px solid var(--hell-color);
+    border-right: 1px solid var(--hell-color);
+}
+
+.grid-skills-container .grid-item:nth-child(5) {
+    grid-area: 3 / 9 / 4 / span 3;
+    border-left: 1px solid var(--hell-color);
+    border-right: 1px solid var(--hell-color);
+}
+
+.grid-skills-container .grid-item:nth-child(6) {
+    grid-area: 4 / 11 / 5 / span 2;
+}
+
+.grid-skills-container .grid-item:nth-child(7) {
+    grid-area: 4 / 1 / 5 / span 2;
+}
+
+.grid-skills-container .grid-item:nth-child(8) {
+    grid-area: 4 / 4 / 5 / span 2;
+}
+
+.grid-skills-container .grid-item:nth-child(9) {
+    grid-area: 4 / 8 / 5 / span 2;
+}
+
+.grid-skills-container .grid-item:nth-child(10) {
+    grid-area: 5 / 8 / 6 / span 2;
+}
+
+.grid-skills-container .grid-item:nth-child(11) {
+    grid-area: 5 / 1 / 6 / span 2;
+    opacity: 0.5;
+}
+
+.grid-skills-container .grid-item:nth-child(12) {
+    grid-area: 5 / 4 / 6 / span 2;
+}
+
+.grid-skills-container .grid-item:nth-child(13) {
+    grid-area: 5 / 11 / 6 / span 2;
+}
+
+.grid-skills-container .grid-item:nth-child(14) {
+    grid-area: 6 / 4 / 6 / span 2;
+}
+
+.grid-skills-container .grid-item:nth-child(15) {
+    grid-area: 6 / 8 / 6 / span 2;
+    opacity: 0.5;
+}
+
+.grid-skills-container .grid-item:nth-child(16) {
+    grid-area: 6 / 11 / 6 / span 2;
+}
+
+
+/* -----------Media Queries-------------- */
+
+/* Larger Tablets & Laptops */
+@media screen and (max-width: 1279px) {
+    /* Header */
+    nav ul {
+        width: 55%;
+    }
+
+    /* Main */
+    h1 {
+        margin-top: 7vh;   
+        font-size: 3em;
+        color: var(--hell-color);
+    }
+    
+    h2 {
+        color: var(--orange-color);
+        font-size: 2em
+    }
+    
+    h3 {
+        color: var(--hell-color);
+        font-size: 1.3em;
+        font-style: italic;
+    
+    }
+    
+    h4 {
+        background-color: rgba(0, 0, 0, 0.5);
+        font-size: 1.5em;
+        box-shadow: 5px 2px 5px 3px rgba(0, 0, 0, 0.5);
+    }
+
+}
+
+/* Larger Smartphones & Tablets  */
+
+@media screen and (max-width: 768px) {
+    /* Header */
+    
+    nav ul {
+        width: 70%;
+    }
+
+    nav ul a {
+        font-size: 1.1em;
+    }
+
+    /* MAIN */
+    
+
+    .grid-skills-container {
+        width: 100%;
+        
+    }
+    h1 {
+        margin-top: 7vh;   
+        font-size: 2.3em;
+        color: var(--hell-color);
+    }
+    
+    h2 {
+        color: var(--orange-color);
+        font-size: 1.5em
+    }
+    
+    h3 {
+        color: var(--hell-color);
+        font-size: 1em;
+        font-style: italic;
+    
+    }
+    
+    h4 {
+        background-color: rgba(0, 0, 0, 0.5);
+        font-size: 1.2em;
+        box-shadow: 5px 2px 5px 3px rgba(0, 0, 0, 0.5);
+    }
+
+}
+
+/* Smartphones */
+
+@media screen and (max-width: 480px) {
+    /* Header */
+    nav ul {
+        width: 80%;
+    }
+    nav ul a {
+        font-size: 1em;
+    }
+
+    /* Main */
+
+   
+
+}

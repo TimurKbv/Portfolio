@@ -23,6 +23,7 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: #f4f4f4;
 }
 
 header {
@@ -490,6 +491,12 @@ footer .black-footer-section a {
 /* ====================Media Queries ======================*/
 /* --------TABLET------------- */
 @media screen and (max-width: 1280px) {
+  header nav .logo {
+    display: none;
+  }
+  header nav .burger-menu {
+    display: none;
+  }
   main .main-container #work-container {
     flex-direction: column;
   }
@@ -539,8 +546,17 @@ footer .black-footer-section a {
     flex-direction: column;
   }
 }
+/* TABLET 756 */
+@media screen and (max-width: 756px) {
+  header nav .menu ul a {
+    font-size: 0.8em;
+  }
+}
 /* -----------PFONE--------------- */
 @media screen and (max-width: 480px) {
+  header nav .menu ul a {
+    font-size: 0.7em;
+  }
   main .main-container #work-container div:first-child p {
     width: 100%;
   }

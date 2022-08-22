@@ -10,7 +10,9 @@ Am Zweiten Tag habe ich mit coden angefangen. Wärend der Arbeit die Wireframes 
 
 ```
 
-## 
+## Farbpalette
+
+
 
 ### Responsivness "HOME"
 ```

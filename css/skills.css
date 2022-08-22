@@ -86,14 +86,11 @@ h4 {
     grid-area: 2 / 2 / 3 / 7;
     border-bottom: 1px solid var(--hell-color);
     border-right: 1px solid var(--hell-color);
-    /* border-radius: 100% 0%; */
 }
 
 .grid-skills-container .grid-item:nth-child(3) {
     grid-area: 2 / 7 / 3 / 12;
     border-bottom: 1px solid var(--hell-color);
-    /* border-right: 1px solid var(--hell-color); */
-    /* border-radius: 0% 100%; */
 }
 
 .grid-skills-container .grid-item:nth-child(4) {
@@ -247,9 +244,4 @@ h4 {
     nav ul a {
         font-size: 1em;
     }
-
-    /* Main */
-
-   
-
 }

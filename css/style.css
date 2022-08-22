@@ -14,7 +14,6 @@ header {
 }
 
 .header-container {
-    /* margin-top: 4vh; */
     display: flex;
     height: 100vh;
     width: 100%;
@@ -175,10 +174,10 @@ section > div {
     flex-direction: column;
 }
 
-/* ITEM - 1 */
+/* ---------ITEM - 1----------- */
 .content {
-    position: sticky;
-    top: 35vh;
+    /* position: sticky;
+    top: 35vh; */
     width: 70%;
     z-index: 10;
 }
@@ -231,7 +230,7 @@ main p {
     font-style: italic;
 }
 
-/* ITEM - 2 */
+/* --------------ITEM - 2------------ */
 
 .image {
     width: 100%;
@@ -263,7 +262,7 @@ main p {
     align-self: flex-end;
 }
 
-/* Fotos drehen */
+/* PHOTO ROTATE */
 .section-3 .item-2 img {
     transform: rotateZ(5deg);
 }
@@ -296,7 +295,7 @@ main p {
 }
 
 
-/* -----------Media Queries-------------- */
+/* =============================Media Queries============================ */
 
 /* Larger Tablets & Laptops */
 @media screen and (max-width: 1279px) {
@@ -345,7 +344,6 @@ main p {
     }
 
     /* MAIN */
-                /* Sections column machen */
     section {
         flex-direction: column;
         gap: 50px;

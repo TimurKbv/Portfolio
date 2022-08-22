@@ -1,8 +1,7 @@
-# Portfolio
-Portfolio Project
-## Worum ging es?
+# Mein Portfolio
+
 ``` 
-Portfolio Seite schnell, responsive und informativ.
+Portfolio Seite schnell, responsive und informativ erstellt.
 ```
 ## Wie bin ich daran gegangen?
 ```
@@ -10,6 +9,9 @@ Am ersten Tag habe ich erstmal überlegt, wie soll meine Webseite aussehenund gl
 Am Zweiten Tag habe ich mit coden angefangen. Wärend der Arbeit die Wireframes habe ich verändert. Die fotos von Wireframes habe ich ebenfalls in "assets". 
 
 ```
+
+## 
+
 ### Responsivness "HOME"
 ```
 Bei der Page  ändern sich die Schwriften und "width"

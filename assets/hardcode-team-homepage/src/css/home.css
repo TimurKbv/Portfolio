@@ -1,0 +1,88 @@
+@import url(header.css);
+
+/* Main */
+body {
+
+    font-family: 'Futura PT', sans-serif;
+
+    /* background: linear-gradient(to right, white 10%, #0b1d6fa4 90%); */
+}
+
+main {
+    
+    margin-top: 6em;
+    width: 87%;
+    margin: 5em auto 0 auto;
+    /* height: 73vh; */
+}
+
+main h1 {
+
+    margin-bottom: 1em;
+   /*  font-weight: 500; */
+   font-size: 18pt;
+   color: #0b1d6f;
+}
+
+main h2, p { font-size: 10pt;
+
+}
+
+
+
+#mosaic {
+    height:55vh;
+    /* background-color: blueviolet; */
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    gap: 0.5em;
+
+}
+
+#mosaic div {
+    background-color: lightgray;
+    border: 5px solid rgb(228, 225, 225);
+}
+
+
+main article h2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #0b1d6f ;
+}
+
+
+
+footer {
+    background-color: #0b1d6f;
+    height: 3vh;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 8pt;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer ul {
+    list-style: none;
+    color: #fff;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 5%;
+}
+
+footer ul a {
+    color: #fff;
+    text-decoration: none;
+    
+}

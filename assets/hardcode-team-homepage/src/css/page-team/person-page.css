@@ -1,0 +1,186 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+/* Variablen */
+:root {
+  --box-color: #0ff7;
+  --rotateSpeed: 30s;
+  --ballJump: 1.5s;
+}
+
+/* SCSS Variablen */
+/*  Page von Person */
+.container {
+  height: 100vh;
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 75px;
+  perspective: 10em;
+  perspective-origin: 50% calc(50% - 2em);
+}
+
+/*  -------------------CUBE with BALL-------------- */
+/* Die Szene dreht sich */
+.scene {
+  position: relative;
+  transform-style: preserve-3d;
+  -webkit-animation: scene-rotate var(--rotateSpeed) infinite linear;
+          animation: scene-rotate var(--rotateSpeed) infinite linear;
+}
+@-webkit-keyframes scene-rotate {
+  to {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes scene-rotate {
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+/* ----------------BALL------------- */
+.ball {
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background: lightcoral;
+  position: absolute;
+  left: -0.5em;
+  bottom: 1em;
+  background-image: radial-gradient(circle at top, lightcoral, #000);
+  animation: ballSprung var(--ballJump) infinite ease-out, scene-rotate var(--rotateSpeed) infinite linear reverse; /* Ball dreht sich in gegenrichtung von Boden, um den 3D Effekt zu machen */
+}
+@-webkit-keyframes ballSprung {
+  0%, 100% {
+    bottom: 0.3em;
+  }
+  50% {
+    bottom: 3em;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+}
+@keyframes ballSprung {
+  0%, 100% {
+    bottom: 0.3em;
+  }
+  50% {
+    bottom: 3em;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+}
+
+/* Schaten für den Ball */
+.ballShadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.4666666667), rgba(0, 0, 0, 0) 50%);
+  /* animation: 
+  ballShadow var(--ballJump) infinite ease-out;
+
+  @keyframes ballShadow {
+      0%, 8%, 93.5%, 100% { transform: scale(1); opacity: 1;}
+      50% { transform: scale(2); opacity: 0.5; animation-timing-function: ease-in;}
+  } */
+}
+
+.cube {
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  bottom: -1em;
+  left: -1em;
+  transform-style: preserve-3d;
+  -webkit-animation: cubeHeight var(--ballJump) infinite linear;
+          animation: cubeHeight var(--ballJump) infinite linear;
+}
+@-webkit-keyframes cubeHeight {
+  0%, 100% {
+    height: 1.5em;
+  }
+  8%, 93.5% {
+    height: 2em;
+  }
+}
+@keyframes cubeHeight {
+  0%, 100% {
+    height: 1.5em;
+  }
+  8%, 93.5% {
+    height: 2em;
+  }
+}
+.cube .left, .cube .right, .cube .front, .cube .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 255, 255, 0.4666666667); /* SCSS Variable */
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.6666666667) inset;
+}
+.cube .front {
+  transform: translateZ(1em);
+}
+.cube .right {
+  transform: rotateY(90deg) translateZ(1em);
+}
+.cube .back {
+  transform: rotateY(180deg) translateZ(1em);
+}
+.cube .left {
+  transform: rotateY(270deg) translateZ(1em);
+}
+.cube .top {
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  background: rgba(0, 255, 255, 0.4666666667);
+  transform: translateY(-50%) rotateX(90deg);
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.6666666667) inset;
+}
+.cube .bottom {
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  background: rgba(0, 0, 0, 0.4666666667);
+  bottom: 0;
+  transform: translateY(50%) rotateX(90deg);
+  box-shadow: 0 0 0.5em #000;
+}
+
+.floor {
+  position: absolute;
+  top: 1em;
+  transform: translate(-50%, -50%) rotateX(90deg);
+  border-radius: 50%;
+  width: 15em;
+  height: 15em;
+  background-image: radial-gradient(rgba(65, 114, 144, 0.549), rgba(0, 0, 0, 0.999) 65%), repeating-conic-gradient(from 45deg, rgb(69, 69, 69) 0deg 90deg, #222 90deg 180deg);
+  background-size: 100%, 1em 1em;
+}
+
+/* Pages */
+.page-hoa {
+  background-color: black;
+}
+
+.page-sophie {
+  background-color: #222;
+}
+
+.page-schamil {
+  background-color: cadetblue;
+}
+
+.page-marco {
+  background-color: gray;
+}
+
+.page-timur {
+  background-color: darkblue;
+}/*# sourceMappingURL=person-page.css.map */

@@ -1,0 +1,136 @@
+@font-face {
+    
+    src: url(../fonts/Futura\ PT/);
+    font-family: 'Futura PT';
+}
+
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+
+html, body {
+
+    font-family: 'Futura PT';
+
+}
+
+h1 {
+    color: #FFFFFF;
+    text-align: left;
+    
+}
+
+h2 {
+    
+    font-size: 20pt;
+    margin: 1%;
+    
+}
+
+details ul li { 
+    margin-top: 1%;
+    font-size: 12pt;
+
+}
+
+
+/* --------------Upper-Section---------- */
+
+#screenreader-container {
+    width: 90vw;
+    margin: 0 auto;
+    background-color: #000000;
+
+    border: solid;
+    display: flex;
+    flex-direction: column;
+
+/*     grid:
+    ".  .       HL      .       .   " 0.5fr
+    ".  .       clip    .   text    .   " 1fr
+    ".  .       clip    .   text    .   " 1fr
+    ".  .       clip    .   .       .   " 1fr
+    ".  .       .   .       .   " 0.5fr
+    /1fr 1fr 1fr 3fr 1fr;     */
+
+    
+}
+
+#screenreader-container h2 {
+    /* HL = Headline */
+    grid-area: HL;
+    color: #FFFFFF;
+    text-align: center;
+    
+    
+}
+
+#screenreader-container > iframe {
+    grid-area: clip;
+    margin: 0 auto;
+}
+
+#screenreader-container > article {
+    
+    text-align: left;
+
+    color: #FFFFFF;
+    
+    font-size: 16pt;
+
+    margin: 2%;
+  
+}
+
+
+/* -----------Lower-Section------------- */
+
+#content-container {
+    width: 90vw;
+    margin: 5% auto;
+
+    display: flex;
+    flex-direction: column;
+
+
+    background-color: #FFFFFF;
+    color: black;
+
+    border: #000000 soli 2px;
+}
+
+
+summary {
+
+    font-size: 18pt;
+    font-weight: 800;
+    
+}
+
+
+
+/* ------helper------- */
+
+
+#emphasis {
+
+    font-weight: 700;
+    
+}
+
+
+
+.responsive-iframe {
+    position: relative;
+
+    width: 80%;
+    height: 55vh;
+    
+}

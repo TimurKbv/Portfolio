@@ -86,6 +86,11 @@ header h2::after {
     align-items: center;
 }
 
+.header-grid-item div:first-child {
+    height: 8em;
+    transition: all 0.8s;
+}
+
 .header-grid-item span {
     color: var(--orange-color);
 }
@@ -101,6 +106,8 @@ header h2::after {
     text-align: center;
     font-size: 2em;
     font-style: italic;
+    display: none;
+    transition: all 0.8s;
 }
 
 /* BG  div */
@@ -120,12 +127,17 @@ header h2::after {
     opacity: 0.3;
 }
 
+.header-grid-item:hover p {
+    display: block;
+    
+}
+
     /* Div mit Texte */
 
 .header-grid-item div:first-child {
     width: 100%;
     transition: all 0.8s;
-    transform: translateY(7.5em);
+    transform: translateY(8em);
     background-color: rgba(0, 0, 0, 0.5);
 
 }
@@ -323,7 +335,7 @@ section:nth-child(even) .project-content p {
     }
 
     .header-grid-item div:first-child {
-        transform: translateY(7em);
+        transform: translateY(9em);
     }
 
     /* Main */
@@ -370,8 +382,6 @@ section:nth-child(even) .project-content p {
         width: 90%;
         height: 75%;
 
-    
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
         gap: 20px;
@@ -388,14 +398,14 @@ section:nth-child(even) .project-content p {
     }
 
     .header-grid-item h3 {
-        font-size: 1.3em;
+        font-size: 1.5em;
     }
 
     .header-grid-item p {
         font-size: 1em;
     }
     .header-grid-item div:first-child {
-        transform: translateY(6.5em);
+        transform: translateY(9em);
     }
 
     /* Main */

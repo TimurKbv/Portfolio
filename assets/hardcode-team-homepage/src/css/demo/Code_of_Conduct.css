@@ -1,0 +1,171 @@
+/* Font imports */
+@font-face {
+    font-family: 'Futura PT';
+    src: url(../fonts/futura-pt-medium.otf);
+}
+
+/* CSS Reset */
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setze globale Regeln */
+body {
+    font-family: 'Futura PT', sans-serif;
+
+    /* background: linear-gradient(to right, white 10%, #0b1d6fa4 90%); */
+}
+
+/* Header formatieren, faerben, platzieren */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #0b1d6f;
+    /* padding: 1em; */
+    height: 8vh;
+
+    margin-top: 5vh;
+    margin-bottom: 6vh;
+
+
+    /* overflow: hidden; */
+}
+
+header > nav {
+    width: 50%;
+}
+
+header > nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+
+    font-size: 1.5em;
+    color: #ffe570;
+}
+
+
+/*  */
+ul.nav-dropdown-menu {
+    display: none;
+    position: absolute;
+    margin-top: 0.2em;
+    border: 2px solid #0b1d6f;
+}
+
+
+.nav-dropdown-menu li {
+    border-bottom: 2px solid #0b1d6f;
+    background-color: #fff;
+    display: block;
+    color: black;
+    width: 100%;
+    padding: 5px;
+}
+
+nav > ul > li:hover ul {
+    display: block;
+}
+.nav-dropdown-menu li,
+.nav-dropdown-menu li a {
+    color: black;
+}
+.nav-dropdown:hover span {
+    color: #fff;
+}
+
+nav li {
+    padding: 5px 10px;
+}
+li {
+   list-style: none; 
+}
+
+#header-logo {
+    border-radius: 50%;
+    width: 96px;
+    height: 96px;
+}
+
+
+#logo-frame {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: scale(1.5);
+
+    margin-left: 5em;
+}
+.container {
+    max-width: 1190px;
+    width: 100%;
+    margin: 0 auto;
+}
+h1 {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.main-content h1 {
+    margin-bottom: 8px;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: darkgoldenrod;
+}
+.main-content h3 {
+    font-size: 18px;
+    color: #0b1d6f;
+    margin-top: 32px;
+    margin-bottom: 8px;
+}
+.main-content p {
+    font-size: 16px;
+    line-height: calc(16px * 1.8);
+    margin-bottom: 16px;
+}
+.main-content ul {
+    padding-left: 16px;
+}
+.main-content ul li{
+    list-style: decimal;
+    margin-bottom: 15px;
+}
+.main-content ul li ul {
+    padding: 8px;
+    margin-top: 8px;
+}
+.main-content ul li ul li {
+    list-style: upper-latin;
+}
+
+footer {
+    background-color: #0b1d6f;
+    height: 5vh;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+footer ul {
+    list-style: none;
+    color: #ffe570;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer ul a {
+    color: #ffe570;
+    text-decoration: none;
+}

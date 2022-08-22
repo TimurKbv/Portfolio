@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="FbW_WD_22_D04-B">
+    <meta name="description" content="Team Homepage fuer den DCI Kurs FbW_WD_22_D04-B aka HardCode">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HardCode: Accessibility</title>
+
+    <link rel="stylesheet" href="/src/css/header.css">
+    <link rel="stylesheet" href="/src/css/accessibility-styles.css">
+</head>
+
+
+<body>
+    <header>
+        <div id="logo-frame">
+            <img id="header-logo" src="/src/img/hardcode_logo_96_96_circle.png" alt="Das Logo fuer die Klasse 'HardCode'">
+        </div>
+        <nav>
+            <ul>
+                <li class="nav-dropdown"><span>Home</span> 
+                    <ul class="nav-dropdown-menu">
+                        <li>Design einer Page</li>
+                        <li>Wahrnehmungstheorie</li>
+                        <li>Farbenlehre</li>
+                    </ul>
+                </li>
+
+                <li class="nav-dropdown"><span>Team</span> 
+                    <ul class="nav-dropdown-menu">
+                        <li>Member Alexander Babel</li>
+                        <li>Member B</li>
+                        <li>Member C</li>
+                    </ul>
+                </li>
+
+                <li class="nav-dropdown"><span>Links</span> 
+                    <ul class="nav-dropdown-menu">
+                        <li><a href="https://developer.mozilla.org/en-US/">MDN Dokumentation</a></li>
+                        <li><a href="https://fonts.google.com/">Google Fonts</a></li>
+                        <li><a href="https://fontawesome.com/">Font Awesome</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+
+        
+        <div id="screenreader-container">
+            <h1>Accessibility</h1>
+            <h2 id="reader">Ein Screenreader. Was ist das?</h2>
+                
+            <iframe class="responsive-iframe" src="https://www.youtube.com/embed/dEbl5jvLKGQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            
+            <article>
+                <p>Screenreader ermöglichen es Blinden oder Menschen mit Sehschwäche das Internet zu nutzen.</p>
+                
+                <!-- <p id="emphasis">Dieser 4:45min Clip veranschaulicht:</p> -->
+                
+                <p> Kleine strukturelle Fehler im Webdesign können große Auswirkungen bei der Nutzung von Screenreader haben.</p>
+            </article>
+           
+        </div>
+
+        <div id="content-container">
+
+        <h2>Möglichkeiten Web-Accessibility zu ermöglichen</h2>
+
+        
+            <details>
+                <summary>Benutze Überschriften dazu um deinen Inhalt zu organisieren</summary>
+                <ul>
+                    <li>Headings ordentlich anwenden</li>
+                    <li>Nur 1 x h1 Heading benutzen</li>
+                    <li>Headings zur Übersicht und zum Organisieren benutzen</li>
+                    <li>Headings nicht überspringen (z.B. von h1 zu h3 springen) sonst denken Menschen die einen Screen Reader benutzen das sie was übersprungen haben</li>
+                </ul>
+            </details>
+            
+            <details>
+                <summary>Füge einen guten alt-text für deine Fotos ein</summary>
+                <ul>
+                    <li>Ausführliche alt texte für Fotos benutzen</li>
+                    <li>Besonders wichtig bei informativen Bildern (Infografiken)</li>
+                    <li>Ausnahme dafür sind wenn die Bilder nur als dekoration dienen</li>
+                    <li>Wenn ein Bild als einziger content für einen link benutzt wird, wird der Screen Reader nur den file namen vorlesen wenn kein alt text eingefügt wird.</li>
+                </ul>
+            </details>
+            
+            <details>
+                <summary>Gib deinen Links gute Beschreibungen</summary>
+                <ul>
+                    <li>Wenn man links einfügt auf der eigenen Website sollte man genau beschreiben wo der Link hinführen wird wenn man ihn drückt</li>
+                    <li>Nur ein "klick hier" wird nicht als beschreibend genug erkannt und ist somit für einen Screen Reader ineffektiv.</li>
+                    <li>So wie sehende Leser eine Seite nach einer verlinkung absuchen, suchen auch Seh-Gestörte Menschen Seiten nach verlinkungen ab. Hierbei können Menschen die Screen Reader benutzen oft den Inhalt im Text der zum Link führt übersehen.</li>
+                    <li>z.B. nicht schreiben: "KLICK HIER um mehr über uns zu erfahren"</li>
+                    <li>z.B. nicht schreiben: "KLICK HIER um mehr über uns zu erfahren"</li>
+                </ul>
+            </details>
+            
+
+            <details>
+                <summary>Farben mit Vorsicht auswählen</summary>
+                <ul>
+                    <li>Die am häufigsten vorkommende Sehschwäche ist die rot-grün Schwäche, die etwa 8% der Bevölkerung betrifft.</li>
+                    <li>Daher vorsicht beim nutzen von Farben die rot oder grün untergemischt haben. Vor allem beim hervorheben von wichtigen Ausfüllfeldern</li>
+                    <li>Andere Gruppen an Menschen mit Behinderungen benutzen Farben z.B. auch um Inhalte voneinander zu unterscheiden und zu organisieren, wie z.B. Menschen mit Lernbehinderung</li>
+                    <li>Um beide Grupen zu befriediegen sollte man sicher gehen das man auch andere visuelle indikatoren, wie z.B. asterisk oder Fragezeichen beutzt</li>
+                    <li>Zum unterscheiden von blocks of Content auch sicher gehen das man visuelle Trennungen durch Whitespace oder Border hervorhebt</li>
+                </ul>
+            </details>
+            
+    
+            <details>
+                <summary>Formulare für Accessibility designen</summary>
+                <ul>
+                    <li>Wenn Formular Felder nicht richtig gelabelt sind liest der Screen Reader diese nicht richtig</li>
+                    <li>Dieses kann für einen Seh-Geschädigten Menschen dann darin enden das dieser nicht weiss was in das jeweilige Feld einzufügen ist.</li>
+                    <li>Jedes Feld sollte ordentlich gelabelt sein, wie z.B. Name oder Vorname oder Nachname. </li>
+                    <li>Der Nutzer sollte auch in der Lage sein das komplette Formular mit der Tab Taste durchtabben und ausfüllen zu können bevor er am Ende zum Senden Knopf kommt</li>
+                    <li>Felder die ähnlich sind oder zusammen gehören sollte man dann auch zusammen gruppieren</li>
+                    <li>Diese Art der organisation des Formulars hilft dem Screen Reader User auch dabei beim Verlauf mitzuhalten und kann auch kontext bereitstellen der sonst beim ausfüllen des Formulars verloren geht</li>
+                    <li>Nach dem absenden des Senden Knopfes sollte eine Information aufleuchten die dem absender über fehlerhaftes ausfüllen aufmerksam macht.</li>
+                    <li>Der Nutzer sollte daraufhin auf einfache Weise durch die fehlerhaft ausgefüllten Felder geführt werden.</li>
+                    <li>Finally, the use of CAPTCHA is inaccessible and should not be used to validate submissions</li>
+                </ul>
+            </details>
+            
+            <details>
+                <summary>Nutze Tabellen für Daten nicht für das Layout</summary>
+                <ul>
+                    <li>Tabellen für das Seiten Layout zu nutzen fügt für den Screen Reader auch Wortfülle zu</li>
+                    <li>Wenn der Screen Reader auf eine Tabelle stößt liest er vor wie viele Reihen und Zeilen vohanden sind was somit auch vom Inhalt der Seite ablenkt.</li>
+                    <li>Beim vorlesen der Seite kann es auch sein das der Screen Reader den Inhalt der Seite auf andere Weise wieder gibt als die Visuelle leseweise es getan hätte</li>
+                    <li>Daher sollte man das Layout der Seite nicht mit einer Tabelle gestalten sondern dieses im CSS machen.</li>
+                    <li>Wenn eine Tabelle nötig ist, sollte man Header für die Zeilen und Reihen benutzen damit der Screen Reader dem Nutzer verständlich machen kann worum es in der Tabelle geht</li>
+                </ul>
+            </details>
+    
+            <details>
+                <summary>Gehe sicher das der komplette Inhalt mit dem Keyboard alleine nutzbar ist</summary>
+                <ul>
+                    <li>Nutzer mit Mobilitätseinschränkung sind vielleicht nicht in der Lage eine Maus oder ein Trackpad zu nutzen</li>
+                    <li>Diesen bieten man als Zugang zum Inhalts an, die Tab oder Pfeiltasten des Keyboards zu nutzen oder durch das einschalten alternativer Geräte wie Single Switch Geräte oder Mund Stücke.</li>
+                </ul>
+            </details>
+            
+            
+        
+
+    </div>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>

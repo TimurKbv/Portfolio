@@ -232,9 +232,6 @@ form button:hover {
 
 @media screen and (max-width: 768px) {
     /* Header */
-    .header-box-1 {
-        display: none;
-    }
     nav ul {
         width: 70%;
     }

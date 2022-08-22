@@ -1,0 +1,99 @@
+/* Font imports */
+@font-face {
+    font-family: 'Futura PT';
+    src: url(../fonts/Futura\ PT/);
+}
+
+/* CSS Reset */
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Header formatieren, faerben, platzieren */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1%;
+    height: 3.0vh;
+    margin-top: 9vh;
+    margin-bottom: 6vh;
+}
+
+
+
+/*-------- LOGO --------*/
+#header-logo {
+    width: 96px;
+    height: 96px;
+    transform: scale(0.8);
+    margin-left: 5em;
+}
+#header-logo:hover {
+    transform: scale(0.87);
+    transition-duration: 0.8s;
+}
+
+
+
+/*-------- NAV --------*/
+header > nav {
+    width: 35%;
+    cursor: pointer;
+}
+header > nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 0.5em; 
+}
+ul.nav-dropdown-menu {
+    display: none;
+    position: absolute;
+    margin-top: 0.2em;  
+    padding: 5px 10px; 
+}
+nav span {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 12pt;
+    color: #0b2b6fd1;
+}
+nav span:hover {
+    color:#03104a;
+    /* font-size: 13pt;
+    transition-duration: 3s;
+    position: absolute; */
+}
+/* ------Drobdown----- */
+.nav-dropdown-menu li {
+    display: block;
+    position: relative;
+    background-color: #fff;
+    color: rgb(5, 101, 170);
+    padding: 2px 2px 0px 3px;
+    font-size: 10pt;
+    letter-spacing: 0.1em;
+    left: -12px;
+    top: 100%;
+    margin: 6% 0% 0% 0%;
+    
+}
+.nav-dropdown-menu li:hover {
+    background-color: #dfe2f0a1;
+    cursor: pointer;
+    color:#03104a;
+    
+}
+nav > ul > li:hover ul {
+    display: block;
+}
+header nav a {
+    font-size: 10pt;
+    color: rgb(5, 101, 170);
+    text-decoration: none;
+}
+

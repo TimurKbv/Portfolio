@@ -1,0 +1,32 @@
+/*Geschwindichkeit von 0.5 Sekunden*/
+.hoverzoom{
+    transition: transform 0.5s;
+    width: 200px;
+    height: 100px;
+}
+/*Fürs Bild Höhe und Breite angeg. und Abstand von oben und von links*/
+img{
+    height: 200px;
+    width: 300px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.hoverzoom:hover,
+.hoverzoom:focus{
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+
+}
+
+
+/*
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+*/
+  

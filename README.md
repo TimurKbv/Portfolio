@@ -11,7 +11,9 @@ New branche "dev" erstellt um weiter zu machen.
 
 ```
 
-## 
+## Farbpalette
+
+
 
 ### Responsivness "HOME"
 ```

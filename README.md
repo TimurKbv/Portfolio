@@ -21,7 +21,9 @@ Im ganzen und allen bin ich mit der Website zufrieden, aber manchmal kommen mir 
 
 ![Contact](https://user-images.githubusercontent.com/104011337/185895716-8c849322-f495-4fc7-8def-af623ebb43c3.png)
  
-
+```
+Mobile Wireframes liegen in "assets/wireframes/new"
+```
 
 ## Colorpalette:
 

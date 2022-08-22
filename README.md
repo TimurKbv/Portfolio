@@ -1,8 +1,7 @@
-# Portfolio
-Portfolio Project
-## Worum ging es?
+# Mein Portfolio
+
 ``` 
-Portfolio Seite schnell, responsive und informativ.
+Portfolio Seite schnell, responsive und informativ erstellt.
 ```
 ## Wie bin ich daran gegangen?
 ```
@@ -11,6 +10,9 @@ Am Zweiten Tag habe ich mit coden angefangen. Wärend der Arbeit die Wireframes 
 New branche "dev" erstellt um weiter zu machen.
 
 ```
+
+## 
+
 ### Responsivness "HOME"
 ```
 Bei der Page  ändern sich die Schwriften und "width"

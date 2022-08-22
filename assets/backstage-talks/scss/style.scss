@@ -33,6 +33,32 @@ main {
     #section-6 {
         background-color: white;
     }
+    #section-5 {
+        background-color: $turkis;
+        section {
+            .container {
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+    
+    #section-4 {
+        background-color: $grapefruit;
+    }
+    
+    #section-3 {
+        background-color: $yellow;
+    }
+    
+    #section-2 {
+        background-color: $blue;
+    }
+    
+    #section-1 {
+        background-color: $red;
+    }
     /* --------------------MAIN SECTIONS------------------ */
     width: 100%;
     transition: all 0.5s;
@@ -143,7 +169,7 @@ footer {
     }
 }
 
-.issue-5 {
+/* .issue-5 {
     background-color: $turkis;
     section {
         .container {
@@ -168,7 +194,7 @@ footer {
 
 .issue-1 {
     background-color: $red;
-}
+} */
 
 /* -------------------Media Queries ------------------------*/
 

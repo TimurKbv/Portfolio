@@ -47,6 +47,24 @@ main {
 main #section-6 {
   background-color: white;
 }
+main #section-5 {
+  background-color: #3FC1B5;
+}
+main #section-5 section .container a {
+  color: white;
+}
+main #section-4 {
+  background-color: #F5651A;
+}
+main #section-3 {
+  background-color: #F9BE02;
+}
+main #section-2 {
+  background-color: #1D3FBB;
+}
+main #section-1 {
+  background-color: #E30512;
+}
 main section {
   width: 100%;
   height: 100vh;
@@ -142,29 +160,32 @@ footer a:hover {
   text-decoration: none;
 }
 
-.issue-5 {
-  background-color: #3FC1B5;
-}
-.issue-5 section .container a {
-  color: white;
+/* .issue-5 {
+    background-color: $turkis;
+    section {
+        .container {
+            a {
+                color: white;
+            }
+        }
+    }
 }
 
 .issue-4 {
-  background-color: #F5651A;
+    background-color: $grapefruit;
 }
 
 .issue-3 {
-  background-color: #F9BE02;
+    background-color: $yellow;
 }
 
 .issue-2 {
-  background-color: #1D3FBB;
+    background-color: $blue;
 }
 
 .issue-1 {
-  background-color: #E30512;
-}
-
+    background-color: $red;
+} */
 /* -------------------Media Queries ------------------------*/
 /* Larger Tablets & Laptops */
 @media screen and (max-width: 1279px) {

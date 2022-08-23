@@ -130,6 +130,7 @@ h4 {
 .grid-skills-container .grid-item:nth-child(11) {
     grid-area: 5 / 7 / 6 / span 2;
     opacity: 0.5;
+    
 }
 
 .grid-skills-container .grid-item:nth-child(12) {
@@ -182,7 +183,7 @@ h4 {
 
 .grid-skills-container .grid-item:nth-child(22) {
     grid-area: 7 / 13 / 8 / span 2;
-    font-size: 0.8em;
+    
 }
 
 .grid-skills-container .grid-item:nth-child(23) {
@@ -205,6 +206,16 @@ h4 {
     }
 
     /* Main */
+
+    .grid-skills-container .grid-item:nth-child(12) {
+        font-size: 0.8em;
+    }
+
+    .grid-skills-container .grid-item:nth-child(14) {
+        font-size: 0.8em;
+    }
+
+    
     h1 {
         font-size: 3em;
     }
@@ -287,6 +298,19 @@ h4 {
     .grid-skills-container {
         grid-template-rows: repeat(4, 1fr) repeat(4, 0.5fr);
     }
+
+
+    .grid-skills-container .grid-item:nth-child(10) {
+        font-size: 0.8em;
+        
+    }
+
+    .grid-skills-container .grid-item:nth-child(11) {
+        font-size: 0.8em;
+        
+    }
+
+    
 
     h1 {
         font-size: 2em;

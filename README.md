@@ -2,7 +2,9 @@
 
 ``` 
 Portfolio Seite schnell, responsive und informativ erstellt.
-=======
+
+```
+
 ```
 Hallo. Dies ist meine Website, auf der ich Ihnen mein Portfolio, meine Fähigkeiten und Informationen zu meiner Person als IT-Spezialist präsentieren möchte.
 

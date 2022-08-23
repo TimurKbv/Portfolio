@@ -232,6 +232,7 @@ main section > div {
 
 .project-content h2 {
     font-size: 4em;
+    text-transform: uppercase;
 }
 
 .project-content h3 {
@@ -307,6 +308,8 @@ section:nth-child(even) .project-content h3,
 section:nth-child(even) .project-content p {
     text-align: end;
 }
+
+
 
 /* =======================Media Queries=========================== */
 
@@ -472,4 +475,12 @@ section:nth-child(even) .project-content p {
     /* Main */
 
     
+}
+
+
+
+/* ====================JS========================= */
+
+.bg-color-switch {
+    background-color: var(--hell-color);
 }

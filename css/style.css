@@ -407,3 +407,48 @@ main p {
     }
 
 }
+
+
+
+
+/* ===========JavaScript============= */
+
+/* Display None */
+.nav-link-1 {
+    transform: translateY(-5vh);
+    transition: all 1s;
+}
+
+.nav-link-2 {
+    transform: translateY(-5vh);
+    transition: all 1s;
+}
+
+.nav-link-3 {
+    transform: translateY(-5vh);
+    transition: all 1s;
+}
+
+.nav-link-4 {
+    transform: translateY(-5vh);
+    transition: all 1s;
+}
+
+
+
+/* Display Block */
+header nav .nav-link-one {
+    transform: translateY(0);
+}
+
+header nav .nav-link-two {
+    transform: translateY(0);
+}
+
+header nav .nav-link-three {
+    transform: translateY(0);
+}
+
+header nav .nav-link-four {
+    transform: translateY(0);
+}

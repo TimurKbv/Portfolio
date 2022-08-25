@@ -24,19 +24,19 @@ h1 {
     color: var(--hell-color);
 }
 
-h2 {
+.grid-skills-container h2 {
     color: var(--orange-color);
     font-size: 2.5em
 }
 
-h3 {
+.grid-skills-container h3 {
     color: var(--hell-color);
     font-size: 1.5em;
     font-style: italic;
 
 }
 
-h4 {
+.grid-skills-container h4 {
     background-color: rgba(0, 0, 0, 0.5);
     font-size: 1.8em;
     box-shadow: 5px 2px 5px 3px rgba(0, 0, 0, 0.5);

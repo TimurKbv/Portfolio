@@ -62,3 +62,132 @@ nav ul a::after {
 nav ul a:hover::after {
     width: 100%;  
 }
+/* BURGER MENU */
+.burger-menu {
+    display: none;
+}
+
+.menu-btn {
+    display: none;
+    position: fixed;
+        top: 1%;
+        left: 3%;
+        z-index: 30;
+
+        width: 10vw;
+        height: 10vw;
+}
+
+.menu-btn span {
+    background-color: var(--orange-color);
+    width: 100%;
+    height: 10%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.8s;
+    
+}
+
+.menu-btn span:nth-child(2) {
+    top: calc(50% - 15px);  
+}
+
+.menu-btn span:nth-child(3) {
+    top: calc(50% + 15px);  
+}
+
+.menu-btn.burger-menu.active-burger-menu span:nth-of-type(1) {
+    
+}
+
+
+/* BURGER MENU */
+.burger-menu {
+    width: 100%;
+    height: 100%;
+    padding: 3em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    background-color: var(--dark-color);
+    align-items: center;
+
+    transition: all 0.5s;
+    
+    transform: translateX(-100%);
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    
+    
+}
+/*------ Burger menu Beim Click zeigen ---*/
+.burger-menu.active-burger-menu {
+    transform: translateX(0);
+}
+
+.burger-menu a {
+    width: 90%;
+   /*  display: block; */
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.burger-menu h3, .burger-menu p {
+    margin-left: 15%;
+    color: var(--hell-color);
+}
+
+.burger-menu h3 {
+    font-size: 3em;
+}
+
+.burger-menu p {
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+.burger-menu span {
+    color: var(--orange-color);
+}
+
+.burger-menu div:hover {
+    transform: scale(1.1);
+}
+
+.burger-menu div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.8s;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* -------MEDIA QUERIES--------BURGER MENU------ */
+
+
+@media screen and (max-width: 768px) {
+    
+    nav {
+        display: none;
+    }
+    /* BURGER MENU BUTTONS */
+    .menu-btn {
+        display: block;   
+    }
+
+}

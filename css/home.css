@@ -332,16 +332,19 @@ main p {
 
 @media screen and (max-width: 768px) {
     /* Header */
-    .header-box-1 {
+    .header-box-2 {
         display: none;
     }
     nav ul {
         width: 70%;
     }
 
+    
+
     nav ul a {
         font-size: 1.1em;
     }
+    
 
     /* MAIN */
     section {
@@ -382,6 +385,10 @@ main p {
     main p {
         font-size: 1.5em;
     }
+
+    /* --------------------------------BURGER MENU------------------------------------- */
+
+    
 
 }
 

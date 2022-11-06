@@ -7,7 +7,7 @@ Portfolio Seite schnell, responsive und informativ erstellt.
 <<<<<<< HEAD
 
 =======
->>>>>>> 3026bf875fb7c16942110710e17c73b92ea7ff65
+
 ```
 Hallo. Dies ist meine Website, auf der ich Ihnen mein Portfolio, meine Fähigkeiten und Informationen zu meiner Person als IT-Spezialist präsentieren möchte.
 

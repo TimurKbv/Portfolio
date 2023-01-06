@@ -1,12 +1,12 @@
 # Mein Portfolio
 
 ``` 
-Portfolio Seite schnell, responsive und informativ erstellt.
+Meine erste Portfolio Seite.
 
 ```
-<<<<<<< HEAD
 
-=======
+
+
 
 ```
 Hallo. Dies ist meine Website, auf der ich Ihnen mein Portfolio, meine Fähigkeiten und Informationen zu meiner Person als IT-Spezialist präsentieren möchte.
